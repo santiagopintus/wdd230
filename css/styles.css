@@ -1,0 +1,20 @@
+body {
+    background-image: radial-gradient(rgb(39,145,197), rgb(9,28,60));
+    height: 100vh;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+html {
+    margin: 0;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8rem;
+}
