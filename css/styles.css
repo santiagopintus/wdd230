@@ -26,7 +26,7 @@ h1, h2, h3 {
 /* HEADER */
 .blue-bar {
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--dark);
     color: var(--white);
 }
 .blue-bar h1 {
