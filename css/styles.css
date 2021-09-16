@@ -65,6 +65,9 @@ footer.blue-bar {
     padding: 3rem 0;
     text-align: center;
 }
+footer a {
+    color: var(--white);
+}
 
 @media only screen and (min-width: 1000px) {
     .profile-pic img {
