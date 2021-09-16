@@ -1,5 +1,17 @@
-const dateSpan = document.querySelector('#currentDate');
-let options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }
-let today = new Date().toLocaleDateString('en-Us', options);
+//Span containing last updated date
+const dateSpan = document.querySelector('#lastUpdate');
+//Span containing the current year
+const yearSpan = document.querySelector('#year');
 
-dateSpan.textContent = today
+let options = { weekday: 'long', day: 'numeric', month: 'numeric', year: 'numeric' }
+let currentYear = new Date().getFullYear();
+let lastModified = new Date(document.lastModified);
+let day = lastModified.getDate();
+let month = lastModified.getMonth() + 1;
+let year = lastModified.getFullYear();
+let time = lastModified.toLocaleTimeString();
+
+lastModified = `${month}/${day}/${year} ${time}`;
+
+dateSpan.textContent = lastModified
+yearSpan.textContent = currentYear
