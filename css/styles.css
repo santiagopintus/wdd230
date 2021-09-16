@@ -65,7 +65,7 @@ footer.blue-bar {
     padding: 3rem 0;
     text-align: center;
 }
-footer a {
+footer .copyright a {
     color: var(--white);
 }
 
