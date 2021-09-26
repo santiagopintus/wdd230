@@ -1,0 +1,112 @@
+/* GLOBAL STYLES */
+:root {
+    --primary: #004e98;
+    --secondary: #3a6ea5;
+    --accent1: #ff6700;
+    --accent2: #c0c0c0;
+    --white: #ebebeb;
+
+    --font: 'Roboto Slab', serif;
+}
+
+*, *::before, *::after {
+    font-family: var(--font);
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--white);
+}
+h1 {
+    font-size: 3ren;
+}
+h2 {
+    font-size: 2.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* THE HEADER SECTION */
+header {
+    width: 100%;
+}
+header .header-title {
+    background-color: var(--primary);
+}
+header .header-title span{
+    color: var(--accent1);
+}
+header nav {
+    background-color: var(--secondary);
+}
+header nav,
+header .header-title {
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+header nav a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 300ms ease;
+}
+header nav a:hover {
+    color: var(--accent1);
+}
+
+/* TITLE */
+.general-title {
+    background-color: var(--accent2);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* PRINCIPLES GRID CONTAINER */
+.principles {
+    margin: 5rem auto;
+}
+@media only screen and (min-width: 576px) {
+    .principles {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 800px) {
+    .principles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* PRINCIPLES CARDS */
+.principle {
+    border-radius: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.principle .info-url a{
+    color: var(--white);
+}
+.principle .info-description {
+    max-width: 90%;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+.copyright{
+    text-align: center;
+    padding-bottom: 5rem;
+}
