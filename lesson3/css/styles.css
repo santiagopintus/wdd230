@@ -17,7 +17,8 @@
     --black: #000000;
     --white: #ffffff;
 
-
+    /* Screen sizes */
+    --tablet: 768px;
 }
 /*----------------------- GLOBALS ----------------------------*/
 html {
@@ -28,6 +29,7 @@ body {
 }
 *,*::before, *::after {
     font-family: var(--font);
+    box-sizing: border-box;
 }
 h1 { font-size: 3.6rem;}
 h2 { font-size: 3.2rem;}
@@ -48,7 +50,7 @@ header {
     background-color: var(--secondary);
 }
 header nav {
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
 }
 header nav ul{
@@ -56,9 +58,11 @@ header nav ul{
     margin: 0;
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 header ul li {
     padding: 2rem;
+    width: 100%;
 }
 header ul li a {
     color: #000000;
@@ -86,6 +90,21 @@ header img{
     margin: 0 auto;
     padding-top: 2rem;
     width: fit-content;
+}
+/* MediaQueries for Header */
+@media only screen and (min-width: 768px) {
+    header nav {
+        width: fit-content;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    header ul li {
+        width: fit-content;
+    }
 }
 
 /*--HOME--*/
