@@ -6,13 +6,14 @@
     --grey: #E8E9EB;
     --blue: #2176AE;
     --darkBlue: #235789;
-    --darkGrey: #626868;
+    --darkGrey: #858686;
     --red: #ED6A5A;
     
     /*Actual color palette*/
     --primary: var(--yellow);
     --secondary: var(--grey);
     --accent: var(--blue);
+    --accent2: var(--red);
     --hovered: var(--darkGrey);
     --black: #000000;
     --white: #ffffff;
@@ -25,7 +26,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 *,*::before, *::after {
     font-family: var(--font);
@@ -35,12 +36,35 @@ h1 { font-size: 3.6rem;}
 h2 { font-size: 3.2rem;}
 h3 { font-size: 2.8rem;}
 h4 { font-size: 2.4rem;}
+p, ul {line-height: 1.5;}
+img {max-width: 100%;}
+/* Media queries for global styles */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.8rem;
+    }
+    ul {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .main-container {
+        width: fit-content;
+        margin: 0 auto;
+        max-width: fit-content;
+    }
+}
 
 /*---------------------- UTILITIES ---------------------------*/
-.container {
+.container, .main-container {
     width: 90%;
     max-width: 120rem;
     margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
 }
 
 /*---------------------- LAYOUT ------------------------------*/
@@ -48,6 +72,28 @@ h4 { font-size: 2.4rem;}
 header {
     width: 100%;
     background-color: var(--secondary);
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+.logo-container img{
+    display: block;
+    padding-top: 2rem;
+    width: fit-content;
+}
+.logo-container p {
+    margin: 0;
+    font-size: 2.4rem;
+    color: var(--black);
+}
+hr {
+    margin-bottom: 0;
 }
 header nav {
     width: 100%;
@@ -59,9 +105,10 @@ header nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 header ul li {
-    padding: 2rem;
+    padding: .5rem 0;
     width: 100%;
 }
 header ul li a {
@@ -79,17 +126,11 @@ header ul li::after {
     height: 2px;
     bottom: 0;
     right: 0;
-    background-color: var(--hovered);
+    background-color: var(--accent2);
     transition: width 300ms ease;
 }
 header ul li:hover::after {
     width: 100%;
-}
-header img{
-    display: block;
-    margin: 0 auto;
-    padding-top: 2rem;
-    width: fit-content;
 }
 /* MediaQueries for Header */
 @media only screen and (min-width: 768px) {
@@ -103,6 +144,7 @@ header img{
     }
 
     header ul li {
+        padding: 2rem;
         width: fit-content;
     }
 }
@@ -110,9 +152,60 @@ header img{
 /*--HOME--*/
 .title {
     padding-top: 5rem;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
 }
 .title h2 {
     margin-top: 0;
+}
+/* Target Audience */
+@media only screen and (min-width: 768px) {
+    .personas .person {
+        margin-top: 5rem;
+    }
+    .personas .person:last-of-type{
+        margin-bottom: 5rem;
+    }
+    .personas .person ul li img {
+        width: 50%;
+    }
+}
+
+/* Color Scheme */
+.info-table {
+    border-collapse: collapse;
+    margin: 5rem auto;
+}
+.info-table, td {
+    border: 1px solid var(--black);
+}
+.info-table td {
+    padding: 1rem;
+}
+.primary-td {background-color: var(--yellow);}
+.secondary-td {background-color: var(--grey);}
+.accent-td {background-color: var(--blue);}
+.accent2-td {background-color: var(--red);}
+
+/*TYPOGRAPHY*/
+.td-36 {
+    font-size: 3.6rem;
+}
+.td-32 {
+    font-size: 3.2rem;
+}
+.td-28 {
+    font-size: 2.8rem;
+}
+.td-24 {
+    font-size: 2.4rem;
+}
+.td-36, .td-32 ,.td-28, .td-24 {
+    font-weight: 700;
+}
+.td-16 {
+    font-size: 1.6rem;
 }
 
 /*-------- FOOTER --------*/
