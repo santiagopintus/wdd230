@@ -1,40 +1,14 @@
 /* MEDIA QUERIES for medium devices */
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 768px) {    
     /* GLOBAL */
     body {
         font-size: 1.8rem;
     }
 
-    ul {
-        max-width: 70rem;
-        margin: 0 auto;
+    .navigation ul li a {
+        font-size: 1.8rem;
     }
-
-
-    /* HEADER */
-    header nav {
-        width: fit-content;
-    }
-
-    header nav ul {
-        flex-direction: row;
-        width: auto;
-    }
-
-    header ul li {
-        width: fit-content;
-    }
-
-    header ul li:last-of-type {
-        margin-bottom: 1rem;
-    }
-
-    header ul li a {
-        display: inline;
-    }
-
-    header ul li:hover::after {
-        width: 100%;
+    .home-section {
+        text-align: start;
     }
 }

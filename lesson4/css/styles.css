@@ -83,44 +83,48 @@ header {
 
 /* NAVIGATION */
 
-header nav {
+header .navigation {
     width: 100%;
-    margin: 0 auto;
+    white-space: nowrap;
 }
 
-header nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+header .navigation ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: fit-content;
 }
 
-header ul li {
+.navigation ul li {
     margin-bottom: 1rem;
     width: 100%;
+    text-align: center;
     display: none;
 }
-header ul li:last-of-type {
+.navigation.show ul li {
+    display: block;
+}
+.navigation ul li:last-of-type {
     margin-bottom: 2rem;
 }
 
-header ul li a {
+.navigation ul li a {
     color: var(--black);
     text-decoration: none;
     display: block;
     font-size: 1.6rem;
+    width: fit-content;
     transition: color 300ms ease;
-    padding: 1rem 2rem 0 2rem;
 }
 
-header ul li a.active,
-header ul li a:hover {
+.navigation ul li a.active,
+.navigation ul li a:hover {
     color: var(--hovered);
 }
 
-header ul li::after {
+.navigation ul li::after {
     content: '';
     display: block;
     width: 0;
@@ -131,9 +135,28 @@ header ul li::after {
     transition: width 300ms ease;
 }
 
-.navigation ul .toggle-menu {
+header .navigation ul li.toggle-menu {
     display: block;
     margin-top: 1rem;
-    max-width: 2.4rem;
     cursor: pointer;
+}
+
+/* PAGE */
+.page-title {
+    text-align: center;
+    margin-top: 5rem;
+}
+.home-section {
+    background-color: var(--accent2);
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
 }
