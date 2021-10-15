@@ -1,73 +1,31 @@
-const input = document.getElementById('favChap');
-const button = document.getElementById('addChapterButton');
-const list = document.querySelector('.list');
 
-button.addEventListener('click', function () {
-    const item = document.createElement('li');
-    const deleteButton = document.createElement('button');
-
-    //If the input element is not empty:
-    if (input.value != '') {
-        
-        //Calls the function that validates the book
-        if (checkValidBooks(input.value)) {
-            item.innerHTML = input.value;
-            deleteButton.innerHTML = "❌";
-        
-            item.appendChild(deleteButton);
-            list.appendChild(item);
-        
-            input.value = '';
-            input.focus();
-        
-            deleteButton.addEventListener('click', function () {
-                list.removeChild(item);
-                input.focus();
-            })
-        } else {
-            //If the book is not valid creates the following error.
-            const error = document.createElement('li');
-            error.innerHTML = "The book is not valid, check for spelling and put spaces between numbers and words.";
-            error.style.color = "red";
-            list.appendChild(error);
-
-            setTimeout(() => {
-                list.removeChild(error);
-            }, 6000);
-        };
-        
-    //If the input element is empty shows the following error:
-    } else {
-
-        const error = document.createElement('li');
-        error.innerHTML = "The chapter cannot be blank";
-        error.style.color = "red";
-        list.appendChild(error);
-
-        setTimeout(() => {
-            list.removeChild(error);
-        }, 4000);
-    }
-});
-
-function checkValidBooks(entry) {
-    bomBooks = ["nephi", "jacob", "enos", "jarom", "omni",
-        "words of mormon", "mosiah", "alma", "helaman",
-        "mormon", "ether", "moroni"];
-    validBook = false;
-
-    const userWords = entry.split(" ");
-
-    for (word of userWords) {
-        word = word.toLowerCase();
-        if (isNaN(word)) {
-            //If the word is not a number check if is in the array
-            validBook = bomBooks.includes(word);
-        }
-    }
-    return validBook;
+function main() {
+    showingMenu();
+    showingDateFooter();
 }
 
+function showingMenu() {
+    let toggleMenu = document.querySelector('.toggle-menu');
+    let navbar = document.querySelector('.navigation');
 
+    toggleMenu.addEventListener('click', () => {
+        navbar.classList.toggle('show');
 
+        if (navbar.classList.contains('show')) {
+            toggleMenu.innerHTML = 'X';
+        } else {
+            toggleMenu.innerHTML = '<div>&#9776; Menu</div>'
+        }
+    })
 
+}
+
+function showingDateFooter() {
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const footerDate = document.getElementById('currentDate');
+
+    const todayFormatted = today.toLocaleDateString('en-Us', options);
+    footerDate.innerHTML = todayFormatted
+}
+main();

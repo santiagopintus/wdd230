@@ -1,0 +1,14 @@
+/* MEDIA QUERIES for medium devices */
+@media only screen and (min-width: 768px) {    
+    /* GLOBAL */
+    body {
+        font-size: 1.8rem;
+    }
+
+    .navigation ul li a {
+        font-size: 1.8rem;
+    }
+    .home-section {
+        text-align: start;
+    }
+}
