@@ -58,15 +58,11 @@ function checkValidBooks(entry) {
 
     const userWords = entry.split(" ");
 
-    console.log("userWords", userWords);
-
     for (word of userWords) {
         word = word.toLowerCase();
-        console.log("each word", word);
         if (isNaN(word)) {
             //If the word is not a number check if is in the array
             validBook = bomBooks.includes(word);
-            console.log("Result is valid:", validBook);
         }
     }
     return validBook;
