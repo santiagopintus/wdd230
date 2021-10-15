@@ -6,6 +6,7 @@ button.addEventListener('click', function () {
     const item = document.createElement('li');
     const deleteButton = document.createElement('button');
 
+    //If the input element is not empty:
     if (input.value != '') {
         
         item.innerHTML = input.value;
@@ -21,6 +22,7 @@ button.addEventListener('click', function () {
             list.removeChild(item);
             input.focus();
         })
+    //If the input element is empty shows the following error:
     } else {
 
         const error = document.createElement('li');
@@ -32,7 +34,10 @@ button.addEventListener('click', function () {
             list.removeChild(error);
         }, 4000);
     }
-})
+});
+
+
+
 
 
 
