@@ -8,7 +8,23 @@
     .navigation ul li a {
         font-size: 1.8rem;
     }
+    
+    /* PAGES */
     .home-section {
         text-align: start;
+    }
+    .hero-section {
+        overflow: hidden;
+    }
+    .hero-section .summary {
+        padding: 1rem;
+        top: 5rem;
+        left: 5rem;
+    }
+
+    .contact-info-section .map {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
     }
 }

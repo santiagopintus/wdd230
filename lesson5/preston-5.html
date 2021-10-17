@@ -36,7 +36,7 @@
             <ul>
                 <li class="toggle-menu"><div>&#9776; Menu</div></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="preston-5.html">Preston</a></li>
+                <li class="active"><a class="active" href="preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -48,17 +48,77 @@
     <main class="container">
         <h2 class="page-title">Preston Idaho</h2>
         
-        <section class="home-section">
-            <h3>Hero Image/Weather Summary</h3>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <img class="hero-image" src="images/sunny-day-preston.jpg" alt="A sunny day">
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <hr>
+                <p>Currently: <span>Sunny</span></p>
+                <p>High: <span>76 °F</span></p>
+                <p>Wind Chill: <span>°F</span></p>
+                <p>Humidity: <span>69%</span></p>
+                <p>Wind Speed: <span>5 mph</span></p>
+            </div>
         </section>
-        <section class="home-section">
+
+        <!-- 5 day forecast section -->
+        <section class="five-day-section">
             <h3>5 Day Forecast</h3>
+            <div class="flex-container">
+                <div class="one-day">
+                    <p class="day-title">Wed</p>
+                    <img width="150px" src="images/sun.png" alt="A little sun icon">
+                    <p>89 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Thu</p>
+                    <img width="150px" src="images/sun.png" alt="A little sun icon">
+                    <p>87 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Fri</p>
+                    <img width="150px" src="images/sun.png" alt="A little sun icon">
+                    <p>78 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Sat</p>
+                    <img width="150px" src="images/sun.png" alt="A little sun icon">
+                    <p>75 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Sun</p>
+                    <img width="150px" src="images/sun.png" alt="A little sun icon">
+                    <p>74 °F</p>
+                </div>
+            </div>
         </section>
-        <section class="home-section">
+        <article class="article-section">
             <h3>Article</h3>
-        </section>
-        <section class="home-section">
-            <h3>Contact Information</h3>
+            <div class="article-content">
+                <img src="images/playing-volley-preston.jpg" alt="A few people playing volley">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis aperiam vero ipsa magnam veritatis. Itaque aut minus, molestiae harum in repudiandae inventore omnis, autem iste dolore qui velit excepturi.
+                Ut accusantium quod natus qui. Accusamus perferendis quos aliquam impedit, error illum incidunt. Est maiores voluptas sed reprehenderit ea debitis ex vero excepturi nesciunt numquam, dolorem magnam necessitatibus iure neque!
+                Facere quae aspernatur tempore consectetur dolores voluptatibus necessitatibus, minima fuga! Placeat adipisci eveniet iusto maxime nobis ex, temporibus iure rem similique doloribus ipsam? Sed laudantium repudiandae eius libero excepturi aspernatur?</p>
+            </div>
+
+        </article>
+
+        <section class="contact-info-section">
+            <img class="map" src="images/location-map.png" alt="Map with location of Happy Winds">
+            <div class="contact-text">
+                <h4>Happy Winds</h4>
+                <p>30 N 1st E, Preston, ID 83263</p>
+
+                <div class="icon-text">
+                    <img src="images/phone_dark.svg" alt="Phone icon">
+                    <p>123.456.789</p>
+                </div>
+                <div class="icon-text">
+                    <img src="images/email_dark.svg" alt="Email icon">
+                    <p>happywinds@info.com</p>
+                </div>
+            </div>
         </section>
     </main>
 

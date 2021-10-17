@@ -13,7 +13,8 @@
     header .navigation ul li:first-of-type {
         display: none;
     }
-    .navigation ul li:hover::after {
+    .navigation ul li:hover::after,
+    .navigation ul li.active::after {
         width: 100%;
     }
     .navigation ul li a {
@@ -24,5 +25,29 @@
     /* PAGE */
     .home-section {
         padding: .5rem 5rem;
+    }
+
+    .hero-section .summary {
+        padding: 2rem;
+        top: 8rem;
+        left: 8rem;
+    }
+    .article-section .article-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .article-section .article-content p {
+        margin-top: 0;
+    }
+    .contact-info-section {
+        display: flex;
+        gap: 5rem;
+    }
+    .contact-info-section .map {
+        display: block;
+        margin: 0;
+        max-width: 50%;
     }
 }
