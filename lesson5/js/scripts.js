@@ -2,6 +2,7 @@
 function main() {
     showingMenu();
     showingDateFooter();
+    showingAnnouncement();
 }
 
 function showingMenu() {
@@ -27,5 +28,17 @@ function showingDateFooter() {
 
     const todayFormatted = today.toLocaleDateString('en-Us', options);
     footerDate.innerHTML = todayFormatted
+}
+
+function showingAnnouncement() {
+    let today = new Date()
+    let day = today.getDay();
+
+    const announcement = document.getElementById('announcement');
+    if (day == 5) {
+        announcement.style.display = 'block';
+    } else {
+        announcement.style.display = 'none';
+    }
 }
 main();
