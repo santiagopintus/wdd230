@@ -15,7 +15,7 @@
     --secondary: var(--grey);
     --accent: var(--blue);
     --accent2: var(--red);
-    --hovered: var(--darkGrey);
+    --hovered: var(--black);
     --black: #000000;
     --white: #ffffff;
 
@@ -103,6 +103,12 @@ header .navigation ul {
     text-align: center;
     display: none;
 }
+.navigation ul li.active {
+    background-color: var(--black);
+}
+.navigation ul li.active a{
+    color: var(--white);
+}
 .navigation.show ul li {
     display: block;
 }
@@ -115,24 +121,8 @@ header .navigation ul {
     text-decoration: none;
     display: block;
     font-size: 1.6rem;
-    width: fit-content;
+    width: 100%;
     transition: color 300ms ease;
-}
-
-.navigation ul li a.active,
-.navigation ul li a:hover {
-    color: var(--hovered);
-}
-
-.navigation ul li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    right: 0;
-    background-color: var(--accent2);
-    transition: width 300ms ease;
 }
 
 header .navigation ul li.toggle-menu {
@@ -146,7 +136,6 @@ header .navigation ul li.toggle-menu {
     padding: 2rem;
     background-color: var(--darkBlue);
     color: var(--white);
-    display: none;
 }
 .page-title {
     text-align: center;
@@ -232,6 +221,7 @@ header .navigation ul li.toggle-menu {
 }
 .flex-container img {
     max-width: 70%;
+    width: 15rem;
     margin: 0 auto;
     display: block;
 }

@@ -6,19 +6,41 @@
     }
     header .navigation ul li {
         margin-bottom: 1rem;
+        position: relative;
         width: 100%;
         display: inline-block;
         padding: 0 1rem;
+        z-index: 2;
     }
     header .navigation ul li:first-of-type {
         display: none;
     }
+    header .navigation ul li:last-of-type {
+        margin-bottom: 1rem;
+    }
+    .navigation ul li::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+        background-color: var(--black);
+        transition: width 300ms ease, height 300ms ease 300ms;
+        z-index: -1;
+    }
     .navigation ul li:hover::after,
     .navigation ul li.active::after {
         width: 100%;
+        height: 100%;
+    }
+    .navigation ul li:hover a,
+    .navigation ul li.active a {
+        color: #ffffff;
     }
     .navigation ul li a {
-        width: min-content;
+        transition: all 200ms ease 300ms;
         padding: 0;
     }
 
