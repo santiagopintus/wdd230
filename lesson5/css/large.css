@@ -48,12 +48,6 @@
     .home-section {
         padding: .5rem 5rem;
     }
-
-    .hero-section .summary {
-        padding: 2rem;
-        top: 8rem;
-        left: 8rem;
-    }
     .article-section .article-content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -71,5 +65,14 @@
         display: block;
         margin: 0;
         max-width: 50%;
+    }
+    .contact-info-section .social-media-icons {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin: 1.8rem 0;
+    }
+    .contact-info-section .social-media-icons img{
+        width: 2.5rem;
     }
 }

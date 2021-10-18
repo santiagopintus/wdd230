@@ -17,9 +17,17 @@
         overflow: hidden;
     }
     .hero-section .summary {
-        padding: 1rem;
-        top: 5rem;
-        left: 5rem;
+        position: absolute;
+        background-color: var(--accent);
+        left: 10%;
+        color: var(--white);
+        text-align: start;
+        opacity: .8;
+        width: fit-content;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 2rem;
+        margin: 0;
     }
 
     .contact-info-section .map {

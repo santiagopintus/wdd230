@@ -160,11 +160,10 @@ header .navigation ul li.toggle-menu {
 .hero-section .summary {
     background-color: var(--accent);
     color: var(--white);
-    opacity: .8;
-    position: absolute;
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto 5rem auto;
     padding: .5rem;
-    top: 1rem;
-    left: 1rem;
 }
 .hero-section .summary h3 {
     font-size: 2rem;
@@ -195,6 +194,9 @@ header .navigation ul li.toggle-menu {
 }
 .contact-info-section .icon-text img {
     max-width: 2rem;
+}
+.contact-info-section .social-media-icons {
+    display: none;
 }
 
 /* PRESTON PAGE */
