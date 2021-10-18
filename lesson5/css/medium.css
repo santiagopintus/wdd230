@@ -8,7 +8,12 @@
     .navigation ul li a {
         font-size: 1.8rem;
     }
-    
+
+    /* HEADER */
+    .logo-container .motto {
+        font-size: 1.8rem;
+    }
+
     /* PAGES */
     .home-section {
         text-align: start;

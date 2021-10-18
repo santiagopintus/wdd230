@@ -78,6 +78,7 @@ header {
 .logo-container .motto {
     margin: 0;
     font-weight: 700;
+    font-size: 1.6rem;
     color: var(--black);
 }
 
