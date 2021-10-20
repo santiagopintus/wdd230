@@ -1,0 +1,104 @@
+:root {
+    /* Fonts */
+    --primary-font: 'Poppins', sans-serif;
+    /* Colors */
+    --primary: #FCFFEB;
+    --secondary: #FAFAC6;
+    --accent: #FECDAA;
+    --white: #F8FFF4;
+    --black: #474350;
+}
+html, body {
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: var(--primary);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    color: var(--black);
+}
+
+/* UTILITIES */
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.btn {
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+    margin: 1rem 0;
+    min-width: 10rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* HEADER */
+header {
+    background-color: var(--secondary);
+    width: 100%;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.navigation ul li {
+    padding: 2rem;
+    display: inline-block;
+    transition: background-color 200ms ease;
+}
+.navigation ul li:hover {
+    background-color: var(--accent);
+}
+.navigation ul li a {
+    text-decoration: none;
+}
+
+/* FORM */
+form {
+    background-color: var(--accent);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+form fieldset {
+    border-radius: 1rem;
+}
+form fieldset legend{
+    padding: 0 2rem;
+}
+
+form .field {
+    padding: 2rem;
+}
+form .field label {
+    margin-right: 1rem;
+}
+
+form .field input {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    border: none;
+}
+
+/* Video tutorial */
+.video-tutorial {
+    width: 90%;
+    min-height: 50rem;
+}
