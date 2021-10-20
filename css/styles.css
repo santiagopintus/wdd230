@@ -59,6 +59,12 @@ h1, h2, h3 {
     text-align: center;
     list-style: none;
 }
+.assignments li {
+    margin: 2rem 0;
+}
+.assignments li:last-of-type {
+    margin: 0;
+}
 
 /* FOOTER */
 footer.blue-bar {

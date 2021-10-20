@@ -4,7 +4,7 @@ const dateSpan = document.querySelector('#lastUpdate');
 const yearSpan = document.querySelector('#year');
 
 let options = { weekday: 'long', day: 'numeric', month: 'numeric', year: 'numeric' }
-let currentYear = new Date().getFullYear();
+
 let lastModified = new Date(document.lastModified);
 let day = lastModified.getDate();
 let month = lastModified.getMonth() + 1;
@@ -14,4 +14,4 @@ let time = lastModified.toLocaleTimeString();
 lastModified = `${month}/${day}/${year} ${time}`;
 
 dateSpan.textContent = lastModified
-yearSpan.textContent = currentYear
+yearSpan.textContent = year
