@@ -1,0 +1,43 @@
+/* MEDIA QUERIES for medium devices */
+@media only screen and (min-width: 768px) {    
+    /* GLOBAL */
+    body {
+        font-size: 1.8rem;
+    }
+
+    .navigation ul li a {
+        font-size: 1.8rem;
+    }
+
+    /* HEADER */
+    .logo-container .motto {
+        font-size: 1.8rem;
+    }
+
+    /* PAGES */
+    .home-section {
+        text-align: start;
+    }
+    .hero-section {
+        overflow: hidden;
+    }
+    .hero-section .summary {
+        position: absolute;
+        background-color: var(--accent);
+        left: 10%;
+        color: var(--white);
+        text-align: start;
+        opacity: .9;
+        width: fit-content;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .contact-info-section .map {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
