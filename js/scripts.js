@@ -16,9 +16,9 @@ lastModified = `${month}/${day}/${year} ${time}`;
 dateSpan.textContent = lastModified
 yearSpan.textContent = year
 
-//Loading roboto slab font
+//Loading roboto slab font variants
 WebFont.load({
     google: {
-        families: ['Roboto Slab']
+        families: ['Roboto Slab:300,400,700']
     }
 });
