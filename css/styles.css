@@ -1,3 +1,5 @@
+/* Importing roboto slab with variants */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap');
 :root {
     --primary: #3A7CA5;
     --white: #EBF2FA;
