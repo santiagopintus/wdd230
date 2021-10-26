@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    
+    <!-- Normalize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- For medium viewports -->
+    <link rel="stylesheet" href="css/medium.css">
+    <!-- For large viewports -->
+    <link rel="stylesheet" href="css/large.css">
+    
+    <!-- Title -->
+    <title>Preston Town - Happy Winds</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-container">
+            <img class="logo" src="images/logo_r.svg" alt="Happy Winds Logo">
+            <h2 class="motto">We love saving your day</h2>
+        </a>
+        <nav class="navigation container">
+            <ul>
+                <li class="toggle-menu"><div>&#9776; Menu</div></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a class="active" href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="announcement" class="announcement">
+            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <h1 class="page-title">Preston Idaho</h1>
+        
+        <!-- Hero section -->
+        <section class="hero-section">
+            <!-- Create a picture tag for an hero-image.jpg of three sizes-->
+            <picture>
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/hero-image-medium.jpg">
+                <source media="(min-width: 1024px)" srcset="images/hero-image-large.jpg">
+
+                <img class="hero-image" src="images/hero-image-small.jpg" alt="A sunny day">
+            </picture>
+
+            <div class="summary">
+                <h2>Weather Summary</h2>
+                <hr>
+                <p>Currently: <span>Sunny</span></p>
+                <p>High: <span><span id="temp">76</span>&#8457;</span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span>69%</span></p>
+                <p>Wind Speed: <span><span id="speed">5</span> mph</span></p>
+            </div>
+        </section>
+
+        <!-- 5 day forecast section -->
+        <section class="five-day-section">
+            <h2>5 Day Forecast</h2>
+            <div class="flex-container">
+                <div class="one-day">
+                    <p class="day-title">Wed</p>
+                    <img src="images/sun.png" alt="A little sun icon">
+                    <p>89 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Thu</p>
+                    <img src="images/sun.png" alt="A little sun icon">
+                    <p>87 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Fri</p>
+                    <img src="images/sun.png" alt="A little sun icon">
+                    <p>78 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Sat</p>
+                    <img src="images/sun.png" alt="A little sun icon">
+                    <p>75 °F</p>
+                </div>
+                <div class="one-day">
+                    <p class="day-title">Sun</p>
+                    <img src="images/sun.png" alt="A little sun icon">
+                    <p>74 °F</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="article-section">
+            <h3>Great season for Sports!</h3>
+            <div class="article-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis aperiam vero ipsa magnam veritatis. Itaque aut minus, molestiae harum in repudiandae inventore omnis, autem iste dolore qui velit excepturi.
+                    Ut accusantium quod natus qui. Accusamus perferendis quos aliquam impedit, error illum incidunt. Est maiores voluptas sed reprehenderit ea debitis ex vero excepturi nesciunt numquam, dolorem magnam necessitatibus iure neque!
+                Facere quae aspernatur tempore consectetur dolores voluptatibus necessitatibus, minima fuga! Placeat adipisci eveniet iusto maxime nobis ex, temporibus iure rem similique doloribus ipsam? Sed laudantium repudiandae eius libero excepturi aspernatur?</p>
+                <img src="images/playing-volley-preston.jpg" alt="A few people playing volley">
+            </div>
+
+        </article>
+
+        <section class="contact-info-section">
+            <img class="map" src="images/location-map.png" alt="Map with location of Happy Winds">
+            <div class="contact-text">
+                <h4>Happy Winds</h4>
+                <p>30 N 1st E, Preston, ID 83263</p>
+
+                <div class="icon-text">
+                    <img src="images/phone_dark.svg" alt="Phone icon">
+                    <p>123.456.789</p>
+                </div>
+                <div class="icon-text">
+                    <img src="images/email_dark.svg" alt="Email icon">
+                    <p>happywinds@info.com</p>
+                </div>
+                <!-- Social media icons -->
+                <div class="social-media-icons">
+                    <a href="https://www.whatsapp.com/">
+                        <img src="images/whatsapp.svg" alt="whatsapp icon">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram.svg" alt="instagram icon">
+                    </a>
+                    <a href="https://www.snapchat.com/">
+                        <img src="images/snapchat.svg" alt="snapchat icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="currentDate"></p>
+        </div>
+    </footer>
+
+    <!-- Referencing Web Font Loader library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <!-- Linking windchill.js -->
+    <script src="js/windchill.js"></script>
+    <!-- My scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
