@@ -82,7 +82,7 @@
                 </div>
                 <div class="field">
                     <label>Storm type
-                        <input list="stormTypes" name="stormType" type="stormType">
+                        <input list="stormTypes" name="stormType">
                         <datalist id="stormTypes">
                             <option value="Flash Flood">
                             <option value="Hail">
@@ -94,10 +94,10 @@
                 </div>
                 <div class="field">
                     <label>Storm Severity
-                        <div class="range-flex">
+                        <span class="range-flex">
                             <input type="range" id="severity" value="5" min="1" max="10" step="1">
                             <span id="severityValue">5</span>
-                        </div>
+                        </span>
                     </label>
                 </div>
                 <div class="field">
@@ -110,11 +110,17 @@
                         </select>
                     </label>
                 </div>
-                <div class="field">
-                    <label>User in-danger level
-                        <label class="label-block"><input type="radio" name="inDanger" value="yes">Yes</label>
-                        <label class="label-block"><input type="radio" name="inDanger" value="maybe">Maybe</label>
-                        <label class="label-block"><input type="radio" name="inDanger" value="no">No</label>
+                <div class="field radio-field">
+                    <p>User in-danger level</p>
+
+                    <label class="label-block">
+                        <input type="radio" name="inDanger" value="yes">Yes
+                    </label>
+                    <label class="label-block">
+                        <input type="radio" name="inDanger" value="maybe">Maybe
+                    </label>
+                    <label class="label-block">
+                        <input type="radio" name="inDanger" value="no">No
                     </label>
                 </div>
                 <div class="field">
