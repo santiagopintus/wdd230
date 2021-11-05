@@ -70,6 +70,7 @@ h1, h2, h3 {
 
 /* FOOTER */
 footer.blue-bar {
+    margin-top: 5rem;
     padding: 3rem 0;
     text-align: center;
 }

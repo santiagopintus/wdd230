@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    
+    <!-- Normalize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- For medium viewports -->
+    <link rel="stylesheet" href="css/medium.css">
+    <!-- For large viewports -->
+    <link rel="stylesheet" href="css/large.css">
+    
+    <!-- Title -->
+    <title>Preston Town - Happy Winds</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-container">
+            <img class="logo" src="images/logo_r.svg" alt="Happy Winds Logo">
+            <h2 class="motto">We love saving your day</h2>
+        </a>
+        <nav class="navigation container">
+            <ul>
+                <li class="toggle-menu"><div>&#9776; Menu</div></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Storm Center</h1>
+
+        <form class="s-form" id="stormCenterForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="field">
+                    <label>Name
+                        <input type="text" name="name"
+                            placeholder="Enter your name"
+                            pattern="[A-Za-z\s]{5,50}"
+                            required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Email
+                        <input type="email" name="email" 
+                            placeholder="example@mail.com">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Phone number
+                        <input type="tel" name="phone" 
+                            placeholder="Enter your phone" required>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Zip Code
+                        <input name="zipCode" type="number" 
+                            placeholder="Enter your zip code" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div class="field">
+                    <label>Storm date
+                        <input name="date" type="date">
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Storm type
+                        <input list="stormTypes" name="stormType" type="stormType">
+                        <datalist id="stormTypes">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Storm Severity
+                        <div class="range-flex">
+                            <input type="range" id="severity" value="5" min="1" max="10" step="1">
+                            <span id="severityValue">5</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Storm region
+                        <select name="region" id="region">
+                            <option selected disabled>Select Region ...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaSprings">Soda Springs</option>
+                            <option value="fishHaven">Fish Haven</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>User in-danger level
+                        <label class="label-block"><input type="radio" name="inDanger" value="yes">Yes</label>
+                        <label class="label-block"><input type="radio" name="inDanger" value="maybe">Maybe</label>
+                        <label class="label-block"><input type="radio" name="inDanger" value="no">No</label>
+                    </label>
+                </div>
+                <div class="field">
+                    <label>Comments
+                        <textarea name="comments" placeholder="Any comments you'd like to add"></textarea>
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <input class="btn btn-primary" type="submit" value="Report Storm">
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="currentDate"></p>
+        </div>
+    </footer>
+
+    <!-- Referencing Web Font Loader library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <script src="js/stormcenterForm.js"></script>
+    <!-- My scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
