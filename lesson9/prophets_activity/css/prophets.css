@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+/* VARIABLES */
+:root {
+    --blue1: #01B6D1;
+    --blue2: #98E2EC;
+    --blue3: #DAF5F8;
+    --white: #ffffff;
+    --black: #000000;
+
+    --prim: var(--blue1);
+    --sec: var(--blue2);
+    --tert: var(--blue3);
+    --card-title-color: var(--black);
+    --card-paragraph-color: var(--black);
+    --body-background: var(--blue3);
+
+    --font: 'Roboto', sans-serif;
+}
+
+/* UTILITIES */
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* GLOBAL styles */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    background-color: var(--body-background);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+header {
+    background-color: var(--prim);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+/* CARD layout */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.cards .prophet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 36rem;
+    background-color: var(--sec);
+}
+.prophet .prophet-info {
+    padding: 2rem 1rem 0 1rem;
+}
+.prophet .prophet-info h2 {
+    margin: 0;
+    color: var(--card-title-color);
+}
+
+.prophet .prophet-info p {
+    color: var(--card-paragraph-color);
+}
+
+.cards .prophet .image-container {
+    padding: 1rem;
+    padding-top: 0;
+    background-color: var(--sec);
+    /* overflow: hidden; */
+    /* max-height: 30.3rem; */
+}
+.cards .prophet .prophet-img{
+    max-width: 50%;
+}
+@media only screen and (min-width: 480px) {
+    .cards .prophet .prophet-img {
+        max-width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* FOOTER */
+footer {
+    background-color: var(--prim);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+footer .footer-content a {
+    color: var(--card-paragraph-color);
+}
