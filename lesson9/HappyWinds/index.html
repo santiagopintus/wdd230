@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Browser color for mobile devices -->
+    <meta name="theme-color" content="#ED6A5A">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    
+    <!-- Normalize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- For medium viewports -->
+    <link rel="stylesheet" href="css/medium.css">
+    <!-- For large viewports -->
+    <link rel="stylesheet" href="css/large.css">
+    
+    <!-- Title -->
+    <title>Home - Happy Winds</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img class="logo" src="images/logo_r.svg" alt="Happy Winds Logo">
+            <h2 class="motto">We love saving your day</h2>
+        </a>
+        <nav class="navigation container">
+            <ul>
+                <li class="toggle-menu"><div>&#9776; Menu</div></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston-9.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <h1 class="page-title home-title">Happy Winds</h1>
+        <!-- The three sizes of the home hero image-->
+        <picture>
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/home-hero-medium.webp">
+            <source media="(min-width: 1024px)" srcset="images/home-hero-large.webp">
+
+            <img class="hero-image" src="images/home-hero-small.webp" alt="A sunny day">
+        </picture>
+
+    </section>
+    
+    <main class="container">
+        <!-- TOWNS INFO -->
+        <div class="towns"></div>
+
+    </main>
+
+    <section class="container">
+        <h3>Check real-time weather!</h3>
+        <iframe class="iframe-meteoblue" src="https://www.meteoblue.com/en/weather/maps/widget/preston_united-states-of-america_5604473?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+        <p class="iframe-copyright">Provided by <a href="https://www.meteoblue.com/en/weather/widget/setupmap/preston_united-states-of-america_5604473" target="_blank">meteoblue</a></p>
+    </section>
+
+    <section class="contact-info-section container">
+        <div class="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47367.91701771445!2d-111.8735809!3d42.096872379336304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1636748681735!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-text">
+            <h4>Happy Winds</h4>
+            <p>30 N 1st E, Preston, ID 83263</p>
+
+            <div class="icon-text">
+                <img src="images/phone_dark.svg" alt="Phone icon">
+                <p>123.456.789</p>
+            </div>
+            <div class="icon-text">
+                <img src="images/email_dark.svg" alt="Email icon">
+                <p>happywinds@info.com</p>
+            </div>
+            <!-- Social media icons -->
+            <div class="social-media-icons">
+                <a href="https://www.whatsapp.com/">
+                    <img src="images/whatsapp.svg" alt="whatsapp icon">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.svg" alt="instagram icon">
+                </a>
+                <a href="https://www.snapchat.com/">
+                    <img src="images/snapchat.svg" alt="snapchat icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>Design and developed by Santiago Pintus | <span id="currentDate"></span></p>
+        </div>
+    </footer>
+
+    <!-- Referencing Web Font Loader library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <!-- My scripts -->
+    <script src="js/fetchTowns.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

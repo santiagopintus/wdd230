@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- Browser color for mobile devices -->
+    <meta name="theme-color" content="#ED6A5A">
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
@@ -23,19 +26,19 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo-container">
+        <a href="index.html" class="logo-container">
             <img class="logo" src="images/logo_r.svg" alt="Happy Winds Logo">
             <h2 class="motto">We love saving your day</h2>
         </a>
         <nav class="navigation container">
             <ul>
                 <li class="toggle-menu"><div>&#9776; Menu</div></li>
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="preston-8.html">Preston</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston-9.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-8.html">Gallery</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -48,12 +51,12 @@
         
         <!-- Hero section -->
         <section class="hero-section">
-            <!-- Create a picture tag for an hero-image.jpg of three sizes-->
+            <!-- Three sizes of the preston hero image-->
             <picture>
-                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/hero-image-medium.jpg">
-                <source media="(min-width: 1024px)" srcset="images/hero-image-large.jpg">
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/preston-hero-medium.webp">
+                <source media="(min-width: 1024px)" srcset="images/preston-hero-large.webp">
 
-                <img class="hero-image" src="images/hero-image-small.jpg" alt="A sunny day">
+                <img class="hero-image" src="images/preston-hero-small.webp" alt="A sunny day">
             </picture>
 
             <div class="summary">
@@ -111,7 +114,9 @@
         </article>
 
         <section class="contact-info-section">
-            <img class="map" src="images/location-map.png" alt="Map with location of Happy Winds">
+            <div class="map-container">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47367.91701771445!2d-111.8735809!3d42.096872379336304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1636748681735!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
+            </div>
             <div class="contact-text">
                 <h4>Happy Winds</h4>
                 <p>30 N 1st E, Preston, ID 83263</p>
@@ -142,7 +147,7 @@
 
     <footer>
         <div class="container">
-            <p id="currentDate"></p>
+            <p>Design and developed by Santiago Pintus | <span id="currentDate"></span></p>
         </div>
     </footer>
 
