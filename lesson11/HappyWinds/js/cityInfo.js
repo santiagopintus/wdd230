@@ -1,8 +1,21 @@
 const prestonId = '5604473';
-const apiKey = "057e1b5ddc6ca4ac1e70d670cfd1c1fe";
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?id=${prestonId}&appid=${apiKey}&units=imperial`;
+const sodaSpringId = '5607916';
+const fishHavenId = '5607916';
 
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${prestonId}&appid=${apiKey}&units=imperial`;
+const pageTitle = document.querySelector('.page-title');
+
+if (pageTitle.innerHTML === 'Preston, Idaho') {
+    cityId = prestonId;
+} else if (pageTitle.innerHTML === 'Soda Springs, Idaho') {
+    cityId = sodaSpringId;
+} else if (pageTitle.innerHTML === 'Fish Haven, Idaho') {
+    cityId = fishHavenId;
+}
+
+const apiKey = "057e1b5ddc6ca4ac1e70d670cfd1c1fe";
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}&units=imperial`;
+
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
 
 // Fetching the data from the api
 fetch(apiUrl)
