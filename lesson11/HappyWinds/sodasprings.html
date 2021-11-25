@@ -44,19 +44,17 @@
     </header>
 
     <main class="container">
-        <div id="announcement" class="announcement">
-            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>
+
         <h1 class="page-title">Soda Springs, Idaho</h1>
         
         <!-- Hero section -->
         <section class="hero-section">
             <!-- Three sizes of the preston hero image-->
             <picture>
-                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/sodasprings-hero-medium.webp">
-                <source media="(min-width: 1024px)" srcset="images/sodasprings-hero-large.webp">
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/hero-images/sodasprings-hero-medium.webp">
+                <source media="(min-width: 1024px)" srcset="images/hero-images/sodasprings-hero-large.webp">
 
-                <img class="hero-image" src="images/sodasprings-hero-small.webp" alt="A sunny day">
+                <img class="hero-image" src="images/hero-images/sodasprings-hero-small.webp" alt="A sunny day">
             </picture>
 
             <div class="summary">
@@ -70,27 +68,49 @@
             </div>
         </section>
 
+        <section class="events-container">
+            <h2 id="eventsTitle">Loading events...</h2>
+            <hr>
+        </section>
+
         <!-- 5 day forecast section -->
         <section class="five-day-section">
             <h2>5 Day Forecast</h2>
             <div class="flex-container" id="forecastContainer">
                 <!-- The following content is replaced by JS with 5-day forecast -->
                 <div id="loadingMessage">
-                    <img src="images/loadingIcon.jpg" alt="Loading Icon">
+                    <img src="images/icons/loadingIcon.jpg" alt="Loading Icon">
                     <p>Loading...</p>
                 </div>
             </div>
         </section>
 
-        <article class="article-section">
-            <h3>Great season for Sports!</h3>
+                <article class="article-section">
+            <h3>Picturing history: Soda Springs, Idaho</h3>
+            <a target="_blank" href="https://www.deseret.com/">
+                <p class="article-author">By Deseret News</p>
+            </a>
             <div class="article-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis aperiam vero ipsa magnam veritatis. Itaque aut minus, molestiae harum in repudiandae inventore omnis, autem iste dolore qui velit excepturi.
-                    Ut accusantium quod natus qui. Accusamus perferendis quos aliquam impedit, error illum incidunt. Est maiores voluptas sed reprehenderit ea debitis ex vero excepturi nesciunt numquam, dolorem magnam necessitatibus iure neque!
-                Facere quae aspernatur tempore consectetur dolores voluptatibus necessitatibus, minima fuga! Placeat adipisci eveniet iusto maxime nobis ex, temporibus iure rem similique doloribus ipsam? Sed laudantium repudiandae eius libero excepturi aspernatur?</p>
-                <img src="images/playing-volley-preston.jpg" alt="A few people playing volley">
-            </div>
-
+                <a target="_blank" href="https://cdn.vox-cdn.com/thumbor/BJeianxH15bvwzy4KpQpfoRe9s8=/1200x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/18056601/700468996.jpg" class="float-left">
+                    <figure>
+                        <img src="images/articles/sodasprings-article1.webp" alt="The famous geyser of Soda Springs">
+                        <figcaption>This view shows the captive geyser at Soda Springs, Idaho, a town established by President Brigham Young. | Kenneth Mays</figcaption>
+                    </figure>
+                </a>
+                <p>This interpretive panel is near the site of Morristown, Idaho, a settlement established by Col. Patrick Connor that now lies under the waters of a reservoir. | Kenneth Mays</p>
+                <p>A state of Idaho interpretive panel near the town notes that Col. Patrick E. Connor (from Fort Douglas, Utah) established a settlement called Morristown, and adjacent army post near the mineral springs in 1863. In subsequent years, the population began to dwindle. In 1870, LDS Church President Brigham Young established what is present-day Soda Springs just east of Connor’s location.</p>
+                <p>In the early 1870s, the Mormon settlers built a cabin to be a summer home for President Young at the site he established. He set up the wide streets and square blocks of the settlement.</p>
+                <a target="_blank" href="https://cdn.vox-cdn.com/uploads/chorus_asset/file/18056694/700468999.jpg" class="float-right">
+                    <figure>
+                        <img src="images/articles/sodasprings-article2.webp" alt="Plaque of the Brigham Young summer home">
+                        <figcaption>This historical plaque identifies and interprets the site of the Brigham Young summer home at Soda Springs, Idaho. | Kenneth Mays</figcaption>
+                    </figure>
+                </a>
+                <p>This historical plaque identifies and interprets the site of the Brigham Young summer home at Soda Springs, Idaho.</p>
+                <p>An interpretive panel and marker at the site of this home explains that this second settlement was part of President Young’s grand vision of a State of Deseret, in which “self-sustaining colonies at strategic economic and defensive locations” would be established throughout Deseret. That summer home stood until the 1940s when the roof caved in when it was moved. The site is identified today by a historical plaque attached to a rock.</p>
+                <p>In 1937, men in Soda Springs looking for a significant source of water to supply a community bathing pool drilled into a natural geyser, unleashing the warm water. It shot out of the earth in a column over 100 feet high. After several weeks of the water running everywhere, they finally capped it. The community boasts that this is the only captive geyser on earth. They now allow the geyser to erupt once an hour for all to see.</p>
+                <a class="read-more" target="_blank" href="https://www.deseret.com/2017/8/30/20618498/picturing-history-soda-springs-idaho">Read more...</a>
+            </div><!-- close article content -->
         </article>
 
         <section class="contact-info-section">
@@ -102,23 +122,23 @@
                 <p>30 N 1st E, Preston, ID 83263</p>
 
                 <div class="icon-text">
-                    <img src="images/phone_dark.svg" alt="Phone icon">
-                    <p>123.456.789</p>
+                    <img src="images/icons/phone_dark.svg" alt="Phone icon">
+                    <p>208-772-6581</p>
                 </div>
                 <div class="icon-text">
-                    <img src="images/email_dark.svg" alt="Email icon">
+                    <img src="images/icons/email_dark.svg" alt="Email icon">
                     <p>happywinds@info.com</p>
                 </div>
                 <!-- Social media icons -->
                 <div class="social-media-icons">
                     <a href="https://www.whatsapp.com/">
-                        <img src="images/whatsapp.svg" alt="whatsapp icon">
+                        <img src="images/icons/whatsapp.svg" alt="whatsapp icon">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="images/instagram.svg" alt="instagram icon">
+                        <img src="images/icons/instagram.svg" alt="instagram icon">
                     </a>
                     <a href="https://www.snapchat.com/">
-                        <img src="images/snapchat.svg" alt="snapchat icon">
+                        <img src="images/icons/snapchat.svg" alt="snapchat icon">
                     </a>
                 </div>
             </div>
@@ -146,6 +166,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <!-- Getting City Info -->
     <script src="js/cityInfo.js"></script>
+    <!-- Getting town events -->
+    <!-- The following must be after cityInfo.js -->
+    <script src="js/fetchTownEvents.js"></script>
     <!-- My scripts -->
     <script src="js/scripts.js"></script>
 </body>

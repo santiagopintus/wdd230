@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ED6A5A">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon">
     
     <!-- Normalize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -53,10 +53,10 @@
         <section class="hero-section">
             <!-- Three sizes of the preston hero image-->
             <picture>
-                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/preston-hero-medium.webp">
-                <source media="(min-width: 1024px)" srcset="images/preston-hero-large.webp">
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/hero-images/preston-hero-medium.webp">
+                <source media="(min-width: 1024px)" srcset="images/hero-images/preston-hero-large.webp">
 
-                <img class="hero-image" src="images/preston-hero-small.webp" alt="A sunny day">
+                <img class="hero-image" src="images/hero-images/preston-hero-small.webp" alt="A sunny day">
             </picture>
 
             <div class="summary">
@@ -70,27 +70,59 @@
             </div>
         </section>
 
+        <section class="events-container">
+            <h2 id="eventsTitle">Loading events...</h2>
+            <hr>
+        </section>
+
         <!-- 5 day forecast section -->
         <section class="five-day-section">
             <h2>5 Day Forecast</h2>
             <div class="flex-container" id="forecastContainer">
                 <!-- The following content is replaced by JS with 5-day forecast -->
                 <div id="loadingMessage">
-                    <img src="images/loadingIcon.jpg" alt="Loading Icon">
+                    <img src="images/icons/loadingIcon.jpg" alt="Loading Icon">
                     <p>Loading...</p>
                 </div>
             </div>
         </section>
 
         <article class="article-section">
-            <h3>Great season for Sports!</h3>
+            <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+            <a target="_blank" href="https://www.deseret.com/">
+                <p class="article-author">By Deseret News</p>
+            </a>
             <div class="article-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis aperiam vero ipsa magnam veritatis. Itaque aut minus, molestiae harum in repudiandae inventore omnis, autem iste dolore qui velit excepturi.
-                    Ut accusantium quod natus qui. Accusamus perferendis quos aliquam impedit, error illum incidunt. Est maiores voluptas sed reprehenderit ea debitis ex vero excepturi nesciunt numquam, dolorem magnam necessitatibus iure neque!
-                Facere quae aspernatur tempore consectetur dolores voluptatibus necessitatibus, minima fuga! Placeat adipisci eveniet iusto maxime nobis ex, temporibus iure rem similique doloribus ipsam? Sed laudantium repudiandae eius libero excepturi aspernatur?</p>
-                <img src="images/playing-volley-preston.jpg" alt="A few people playing volley">
-            </div>
-
+                <a target="_blank" href="https://cdn.vox-cdn.com/uploads/chorus_asset/file/18052009/700461648.jpg" class="float-right">
+                    <figure>
+                        <img src="images/articles/preston-article1.webp" alt="A beautiful in Fish Haven, Idaho">
+                        <figcaption>Brothers Gene Williams, left, and Bruce Fisher, right.</figcaption>
+                    </figure>
+                </a>
+                <p>LOGAN — A single line from the three-page typewritten letter leaped out at Maxine Fisher in July 2009. She read the words from a stranger over and over, stunned and numb with disbelief: “I have reason to believe you are my mother.”</p>
+                <p>The author of the letter, Gene Williams, wrote that there had been a mix-up in the Preston, Idaho, hospital 65 years earlier, and Maxine and another woman’s babies had been switched.</p>
+                <p>Maxine, now 98, still lives at home by herself on a quiet street in this northern Utah community. She is lively, sharp and fiercely independent. Although skeptical of his claim that he could be her son, she said Gene’s letter still shook her to the core.</p>
+                <p>“It was so ridiculous, I just couldn’t believe it,” Maxine said. “Preston is a small town, and everybody knows everybody. I knew all the nurses by their first names, and I didn’t think the nurses had switched my baby.”</p>
+                <p>She worried at first it might be a scam but still replied in careful penmanship on a single page.</p>
+                <p>“I wish the shock of it had put me in my grave,” she wrote back to Gene. “I’m crying, I’m shaking, walking around in a daze. I’m sick to my stomach, my mind’s boggled. I can’t face it but I can’t disregard it.”</p>
+                <p>Maxine said her main concern was for her son, Rod. She’d raised him and been his mother for 65 years. If what this stranger Gene claimed in his letter was true, she didn’t want to think about the impact on the tight-knit Fisher family.</p>
+                <p>With powerful online search engines enabling anyone with an internet connection to access countless databases and historical records, stories about adoptees finding their biological parents and others accidentally discovering long-lost relatives have become commonplace. The affordability and ease of DNA testing — requiring only a simple swab of saliva — has also provided unimpeachable evidence of someone's origins.</p>
+                <p>But none of that existed in April 1963, when Gene, then 19, was about to serve a mission to Mexico for his church. His parents, Cecil Williams and Eva Belnap, had divorced when he was only 14 months old. Gene remained with his father, who remarried and settled in Phoenix, Arizona, where Gene grew up. After receiving his mission call from The Church of Jesus Christ of Latter-day Saints, Gene and his father were driving from Arizona to Utah to drop him off in Salt Lake City for missionary training.</p>
+                <p>On the way, Gene’s father drove him through Preston to show him where he was born and visit a few family members still in the area, including his maternal grandmother, Martha Belnap. As they were leaving, she left him with a cryptic secret.</p>
+                <a target="_blank" href="https://cdn.vox-cdn.com/thumbor/y3z8XlVmm0t3MwJGGq_m8jX5CG4=/0x0:853x1280/920x0/filters:focal(0x0:853x1280):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/18052466/web_598cbda08bc4c.jpg" class="float-right">
+                    <figure>
+                        <img src="images/articles/preston-article2.webp" alt="Beautiful mountains">
+                        <figcaption>Maxine Fisher, 98, at her home on Aug. 7, 2017, in Logan, Utah Parker Atkinson, Deseret News </figcaption>
+                    </figure>
+                </a>   
+                <p>Grandma Belnap told him to look for another new missionary named Rodney Fisher, who she said would also be at missionary training the same day as Gene. She said something about Gene and this other boy Rod having been mixed up as babies at the hospital.</p>
+                <p>“She said, ‘Don’t worry about the babies being switched because I got you to the right mothers, and everything is fine,’” Gene said.</p>
+                <p>It was the first time he had ever heard anything about a baby switch.</p>
+                <p>A few days later in Salt Lake City, he met the missionary his grandmother had told him about. Among the crowd of 220 other new missionaries, he recognized Rod from a distance.</p>
+                <p>“It just hit me like a bolt of lightning,” Gene said. “I remember thinking, that kid looks just like my dad.”</p>
+                <p>The two briefly exchanged pleasantries. Gene was on his way to preach in Mexico for two years, and Rod to his own mission in Canada. With that, they went their separate ways.</p>
+                <a class="read-more" target="_blank" href="https://www.deseret.com/2017/8/11/20617572/baby-switch-how-a-mormon-family-dealt-with-the-fallout-of-a-decades-old-secret">Read more...</a>
+            </div><!-- close article content -->
         </article>
 
         <section class="contact-info-section">
@@ -102,23 +134,23 @@
                 <p>30 N 1st E, Preston, ID 83263</p>
 
                 <div class="icon-text">
-                    <img src="images/phone_dark.svg" alt="Phone icon">
-                    <p>123.456.789</p>
+                    <img src="images/icons/phone_dark.svg" alt="Phone icon">
+                    <p>208-772-6581</p>
                 </div>
                 <div class="icon-text">
-                    <img src="images/email_dark.svg" alt="Email icon">
+                    <img src="images/icons/email_dark.svg" alt="Email icon">
                     <p>happywinds@info.com</p>
                 </div>
                 <!-- Social media icons -->
                 <div class="social-media-icons">
                     <a href="https://www.whatsapp.com/">
-                        <img src="images/whatsapp.svg" alt="whatsapp icon">
+                        <img src="images/icons/whatsapp.svg" alt="whatsapp icon">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="images/instagram.svg" alt="instagram icon">
+                        <img src="images/icons/instagram.svg" alt="instagram icon">
                     </a>
                     <a href="https://www.snapchat.com/">
-                        <img src="images/snapchat.svg" alt="snapchat icon">
+                        <img src="images/icons/snapchat.svg" alt="snapchat icon">
                     </a>
                 </div>
             </div>
@@ -146,6 +178,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <!-- Getting City Info -->
     <script src="js/cityInfo.js"></script>
+    <!-- Getting town events -->
+    <!-- The following must be after cityInfo.js -->
+    <script src="js/fetchTownEvents.js"></script>
     <!-- My scripts -->
     <script src="js/scripts.js"></script>
 </body>

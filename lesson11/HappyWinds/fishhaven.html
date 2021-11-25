@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ED6A5A">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon">
     
     <!-- Normalize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -44,19 +44,17 @@
     </header>
 
     <main class="container">
-        <div id="announcement" class="announcement">
-            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>
+
         <h1 class="page-title">Fish Haven, Idaho</h1>
         
         <!-- Hero section -->
         <section class="hero-section">
             <!-- Three sizes of the preston hero image-->
             <picture>
-                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/preston-hero-medium.webp">
-                <source media="(min-width: 1024px)" srcset="images/preston-hero-large.webp">
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/hero-images/fishhaven-hero-medium.webp">
+                <source media="(min-width: 1024px)" srcset="images/hero-images/fishhaven-hero-large.webp">
 
-                <img class="hero-image" src="images/preston-hero-small.webp" alt="A sunny day">
+                <img class="hero-image" src="images/hero-images/fishhaven-hero-small.webp" alt="A sunny day">
             </picture>
 
             <div class="summary">
@@ -70,27 +68,61 @@
             </div>
         </section>
 
+        <section class="events-container">
+            <h2 id="eventsTitle">Loading events...</h2>
+            <hr>
+        </section>
+
         <!-- 5 day forecast section -->
         <section class="five-day-section">
             <h2>5 Day Forecast</h2>
             <div class="flex-container" id="forecastContainer">
                 <!-- The following content is replaced by JS with 5-day forecast -->
                 <div id="loadingMessage">
-                    <img src="images/loadingIcon.jpg" alt="Loading Icon">
+                    <img src="images/icons/loadingIcon.jpg" alt="Loading Icon">
                     <p>Loading...</p>
                 </div>
             </div>
         </section>
 
         <article class="article-section">
-            <h3>Great season for Sports!</h3>
+            <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+            <a target="_blank" href="https://www.deseret.com/">
+                <p class="article-author">By Deseret News</p>
+            </a>
             <div class="article-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis aperiam vero ipsa magnam veritatis. Itaque aut minus, molestiae harum in repudiandae inventore omnis, autem iste dolore qui velit excepturi.
-                    Ut accusantium quod natus qui. Accusamus perferendis quos aliquam impedit, error illum incidunt. Est maiores voluptas sed reprehenderit ea debitis ex vero excepturi nesciunt numquam, dolorem magnam necessitatibus iure neque!
-                Facere quae aspernatur tempore consectetur dolores voluptatibus necessitatibus, minima fuga! Placeat adipisci eveniet iusto maxime nobis ex, temporibus iure rem similique doloribus ipsam? Sed laudantium repudiandae eius libero excepturi aspernatur?</p>
-                <img src="images/playing-volley-preston.jpg" alt="A few people playing volley">
-            </div>
-
+                <a target="_blank" href="https://photos.bringfido.com/lodging/7/2/5/514527/514527_13411754.jpg?size=slide&density=2x" class="float-right">
+                    <figure>
+                        <img src="images/articles/fishhaven-article1.webp" alt="A beautiful cabain in Fish Haven, Idaho ">
+                        <figcaption>A beautiful cabain in Fish Haven, Idaho</figcaption>
+                    </figure>
+                </a>
+                <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.</p>
+                <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.</p>
+                <p>But they don't live there. It's different living in Fish Haven.</p>
+                <p>The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains.</p>
+                <p>It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the road. But people call it a town even though there isn't a city council, just the Bear Lake County Commission that oversees development there.</p>
+                <p>Only 50 to 100 people call it home, depending on the weather.</p>
+                <p>Vic Tilt, co-owner of Gladys' Place, is one of the few year-around residents and said the population drops quickly when things get cold.</p>
+                <p>The winter evacuation isn't much of a worry for Tilt, 60, because his store is the only one around. The nearest other store is in Montpelier, about 45 minutes away.</p>
+                <p>Gladys' Place is also only a few minutes from the Utah border and has become quite a lottery spot. The little store is the third- and fourth-biggest lottery ticket seller in Idaho, selling about 500,000 tickets a year.</p>
+                <p>"We've got a whole mall in 1,000 square feet," Tilt said.</p>
+                <p>Because it is the only business in Fish Haven, Gladys' Place sells it all — liquor, groceries, videos, tourist gifts and some of the best deli sandwiches around — and also serves as post office, Gladys Tilt said.</p>
+                <a target="_blank" href="https://i.pinimg.com/originals/05/f0/3a/05f03a0fec0509f467914359cbe665ca.jpg" class="float-left">
+                    <figure>
+                        <img src="images/articles/fishhaven-article2.webp" alt="Beautiful mountains">
+                        <figcaption>Splendid lake with snowy montains</figcaption>
+                    </figure>
+                </a>
+                <p>Yep, you guessed it, Gladys' Place is 58-year-old Gladys Tilt's place. The Tilts opened the little store in April 1994 and have been steeped in tourist fun and local tradition ever since.</p>
+                <p>Before 1994 the couple had been working for a corporation in Salt Lake City.</p>
+                <p>On one of their traditional summer trips they passed through Fish Haven and fell in love with the town and Bear Lake. The couple decided to move their fifth-wheel camper trailer to the area, bought a piece of ground and parked it.</p>
+                <p>That wasn't enough.</p>
+                <p>"We were spending almost every bit of free time we had up here," Gladys said. "We heard that the store might be sold and so we decided to go for it."</p>
+                <p>They gave up everything in the city — their jobs, home, and moved to Fish Haven in just a few months.</p>
+                <p>"We sold our house for cash and moved," Vic said. "'We haven't looked back. I was born in Salt Lake City, but now you couldn't drag me back."</p>
+                <a class="read-more" target="_blank" href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents">Read more...</a>
+            </div><!-- close article content -->
         </article>
 
         <section class="contact-info-section">
@@ -102,23 +134,23 @@
                 <p>30 N 1st E, Preston, ID 83263</p>
 
                 <div class="icon-text">
-                    <img src="images/phone_dark.svg" alt="Phone icon">
-                    <p>123.456.789</p>
+                    <img src="images/icons/phone_dark.svg" alt="Phone icon">
+                    <p>208-772-6581</p>
                 </div>
                 <div class="icon-text">
-                    <img src="images/email_dark.svg" alt="Email icon">
+                    <img src="images/icons/email_dark.svg" alt="Email icon">
                     <p>happywinds@info.com</p>
                 </div>
                 <!-- Social media icons -->
                 <div class="social-media-icons">
                     <a href="https://www.whatsapp.com/">
-                        <img src="images/whatsapp.svg" alt="whatsapp icon">
+                        <img src="images/icons/whatsapp.svg" alt="whatsapp icon">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="images/instagram.svg" alt="instagram icon">
+                        <img src="images/icons/instagram.svg" alt="instagram icon">
                     </a>
                     <a href="https://www.snapchat.com/">
-                        <img src="images/snapchat.svg" alt="snapchat icon">
+                        <img src="images/icons/snapchat.svg" alt="snapchat icon">
                     </a>
                 </div>
             </div>
@@ -146,6 +178,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <!-- Getting City Info -->
     <script src="js/cityInfo.js"></script>
+    <!-- Getting town events -->
+    <!-- The following must be after cityInfo.js -->
+    <script src="js/fetchTownEvents.js"></script>
     <!-- My scripts -->
     <script src="js/scripts.js"></script>
 </body>

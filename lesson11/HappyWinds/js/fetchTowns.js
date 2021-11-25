@@ -28,12 +28,15 @@ function createTownsHtml(jsonObject) {
             card.classList.add('town');
             infoContainer.classList.add('info-container');
             h2.textContent = town.name;
-            motto.textContent = 'Motto: ' + town.motto;
+            motto.textContent = town.motto;
+            motto.classList.add('motto');
             yearFounded.textContent = 'Year Founded: ' + town.yearFounded;
             population.textContent = 'Population: ' + town.currentPopulation;
             rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
             photoContainer.classList.add('photo-container');
-            photo.setAttribute('src', `images/${town.photo}`);
+            //Change photo format to webp
+            photoName = replaceFormat(town.photo, '.webp');
+            photo.setAttribute('src', `images/cards/${photoName}`);
             photo.setAttribute('alt', `${town.name}`);
             photoContainer.appendChild(photo);
 
@@ -50,4 +53,10 @@ function createTownsHtml(jsonObject) {
             townsContainer.appendChild(card);
         }
     }
+}
+
+const replaceFormat = (filename, format) => {
+    newName = filename.split('.')
+    newName = newName[0] + format;
+    return newName;
 }

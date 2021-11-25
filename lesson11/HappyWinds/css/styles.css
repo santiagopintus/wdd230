@@ -7,6 +7,7 @@
     --yellow: #FFd02c;
     --grey: #E8E9EB;
     --blue: #2176AE;
+    --lightBlue: rgb(0, 173, 236);
     --darkBlue: #235789;
     --darkGrey: #858686;
     --red: #ED6A5A;
@@ -15,6 +16,7 @@
     --primary: var(--yellow);
     --secondary: var(--grey);
     --accent: var(--blue);
+    --accentLight: var(--lightBlue);
     --accentDark: var(--darkBlue);
     --accent2: var(--red);
     --hovered: var(--black);
@@ -42,10 +44,11 @@ body {
     box-sizing: border-box;
 }
 
-h1 {font-size: 3.6rem;}
-h2 {font-size: 3.2rem;}
-h3 {font-size: 2.8rem;}
-h4 {font-size: 2.4rem;}
+h1 {font-size: 2.8rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.2rem;}
+h4 {font-size: 2rem;}
+
 p,ul {line-height: 1.5;}
 
 img {max-width: 100%;}
@@ -162,7 +165,17 @@ header .navigation ul li.toggle-menu {
     background-color: var(--accentDark);
     justify-content: space-between;
     margin-bottom: 2rem;
+    text-align: center;
     width: 100%;
+    min-height: 43.38rem;
+}
+.towns .town h2 {
+    margin-bottom: 0;
+}
+.towns .town .info-container .motto{
+    margin-top: 0;
+    font-style: italic;
+    font-weight: 700;
 }
 .towns .town .info-container {
     color: var(--white);
@@ -218,8 +231,6 @@ header .navigation ul li.toggle-menu {
 .hero-section {
     position: relative;
     width: 100%;
-    max-height: 70vh;
-    /* overflow: hidden; */
     margin-bottom: 5rem;
 }
 .hero-section .hero-image {
@@ -245,12 +256,43 @@ header .navigation ul li.toggle-menu {
     font-weight: bold;
 }
 .article-section {
+    margin: 5rem auto;
+    padding: 2rem;
+}
+.article-section a {
+    text-decoration: none;
+}
+.article-section a.read-more {
+    text-decoration: underline;
+}
+.article-section .article-author {
+    font-size: 1.4rem;
+    color: var(--accent2);
+}
+
+.article-section .article-content figure {
+    border-radius: 1rem;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--accent);
+}
+.article-section .article-content figure figcaption {
+    padding: .5rem;
+    font-size: 1.6rem;
+    color: var(--white);
+}
+.article-section .article-content img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.article-section h3 {
     text-align: center;
-    margin-bottom: 5rem;
 }
 
 .contact-info-section {
     background-color: var(--accent2);
+    text-align: center;
     padding: 2rem;
 }
 .contact-info-section .map-container {
@@ -264,6 +306,7 @@ header .navigation ul li.toggle-menu {
 }
 .contact-info-section .icon-text {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: .5rem;
 }
@@ -274,18 +317,42 @@ header .navigation ul li.toggle-menu {
     display: flex;
     width: 50%;
     justify-content: space-between;
-    margin: 1.8rem 0;
+    margin: 1.8rem auto;
 }
 
 .contact-info-section .social-media-icons img {
     width: 2.5rem;
 }
 
-/*=========   PRESTON PAGE   =========*/
+/*=========   TOWN PAGES   =========*/
 #loadingMessage {
     background-color: var(--white);
     width: 100%;
 }
+/* Events section */
+.events-container {
+    background-color: var(--secondary);
+    background-image: linear-gradient(to right, var(--secondary), var(--secondary) 50%, var(--accent) 50%, var(--accent));
+    background-size: 205%;
+    color: var(--black);
+    border: 6px solid var(--accent);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition: 
+        transform 300ms ease-out,
+        box-shadow 300ms ease-out,
+        background-position 600ms cubic-bezier(0.74, 0.02, 0.33, 0.67),
+        color 300ms ease-out 300ms;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,.8);
+}
+.events-container:hover {
+    transform: translateY(-3px);
+    background-position: right;
+    box-shadow: 0 4px 6px -2px rgba(0,0,0,.8);
+    color: var(--white);
+}
+
+/* 5 day forecast section */
 .five-day-section {
     text-align: center;
     margin-bottom: 5rem;
@@ -294,7 +361,7 @@ header .navigation ul li.toggle-menu {
     margin: 0 auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;,
+    grid-template-columns: 1fr 1fr;
 }
 .flex-container .one-day {
     background-color: var(--white);

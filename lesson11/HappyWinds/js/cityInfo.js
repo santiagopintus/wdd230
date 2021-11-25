@@ -3,13 +3,17 @@ const sodaSpringId = '5607916';
 const fishHavenId = '5607916';
 
 const pageTitle = document.querySelector('.page-title');
+let cityName = '';
 
 if (pageTitle.innerHTML === 'Preston, Idaho') {
     cityId = prestonId;
+    cityName = 'Preston';
 } else if (pageTitle.innerHTML === 'Soda Springs, Idaho') {
     cityId = sodaSpringId;
+    cityName = 'Soda Springs';
 } else if (pageTitle.innerHTML === 'Fish Haven, Idaho') {
     cityId = fishHavenId;
+    cityName = 'Fish Haven';
 }
 
 const apiKey = "057e1b5ddc6ca4ac1e70d670cfd1c1fe";
@@ -28,7 +32,6 @@ fetch(apiUrl)
     });
 
 function createHtml(response) {
-    console.log(response);
     const currently_element = document.getElementById('currently');
     const currently = response.weather[0].description;
     currently_element.innerHTML = currently;
