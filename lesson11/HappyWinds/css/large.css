@@ -130,6 +130,11 @@
         width: 50%;
         margin-top: .5rem;
     }
+
+    /*=======     404 PAGE   =========== */
+    .content-404 .logo-404 {
+        font-size: 40rem;
+    }
     /*=======   GALLERY (large)  =======*/
     .images-container {
         display: grid;
