@@ -145,5 +145,5 @@ function trackingTimeBetweenVisits() {
 }
 
 //Loading Work Sans font
-WebFont.load({google: {families: ['Work Sans:300,400,500,600,700']}});
+WebFont.load({google: {families: ['Work Sans:300,400,500,600,700,900']}});
 
