@@ -313,6 +313,10 @@ header .navigation ul li.toggle-menu {
 .contact-info-section .icon-text img {
     max-width: 2rem;
 }
+.contact-info-section .contact-text a { 
+    color: var(--black);
+    text-decoration: none;
+}
 .contact-info-section .social-media-icons {
     display: flex;
     width: 50%;
@@ -536,10 +540,9 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
     color: var(--black);
     font-weight: 700;
 }
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }

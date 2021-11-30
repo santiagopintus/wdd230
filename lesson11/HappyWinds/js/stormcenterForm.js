@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function updateSeverity() {
+    // Get the severity value from the form and show it to the user
+    const $severityInput = document.querySelector('#severityInput');
+    const $severityValue = document.querySelector('#severityValue');
 
-    const severityInput = document.querySelector('#severity');
-    const severityValue = document.querySelector('#severityValue');
-
-    severityInput.addEventListener('change', (event) => {
-        severityValue.innerHTML = event.target.value;
+    $severityInput.addEventListener('change', (event) => {
+        $severityValue.innerHTML = event.target.value;
     });
-    severityInput.addEventListener('input', (event) => {
-        severityValue.innerHTML = event.target.value;
+    $severityInput.addEventListener('input', (event) => {
+        $severityValue.innerHTML = event.target.value;
     })
 }
 
